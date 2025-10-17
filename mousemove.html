@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover</title>
+    <link rel="icon" href="data:,">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        #abcd{
+            transition: cubic-bezier(0.19, 1, 0.22, 1) .2s;
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            border-radius: 50%;
+        }   
+    </style>
+</head>
+<body>
+    <div id="abcd"></div>
+    <script src="mousemove.js"></script>
+</body>
+</html>
