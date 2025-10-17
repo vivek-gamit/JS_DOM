@@ -1,6 +1,6 @@
 let form = document.querySelector("form");
 let inputs = document.querySelectorAll("input");
-let main = document.getElementById("main")
+let main = document.querySelector(".main")
 
 form.addEventListener("submit",(dets)=>{
     dets.preventDefault();
@@ -15,15 +15,15 @@ form.addEventListener("submit",(dets)=>{
 
     let img = document.createElement("img");
     img.setAttribute(
-        "src","https://images.unsplash.com/photo-1760086741328-c56df17e8272?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=600"
+        "src",inputs[0].value
     );
 
     let h4 = document.createElement("h4");
-    h4.textContent = "Arisu"
+    h4.textContent = inputs[1].value
     let h5 = document.createElement("h5");
-    h5.textContent = "musician"
+    h5.textContent = inputs[2].value
     let h6 = document.createElement("h6");
-    h6.textContent = "Hey guys, i am the world best musician and i also perform wiht big celibrity"
+    h6.textContent = inputs[3].value
 
     profile.appendChild(img);
     card.appendChild(profile);
@@ -33,4 +33,10 @@ form.addEventListener("submit",(dets)=>{
     card.appendChild(h6);
 
     main.appendChild(card);
+
+    inputs.forEach(function(inp){
+        if(inp.type !== "submit"){
+            inp.value = "";
+        }
+    })
 })

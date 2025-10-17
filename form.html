@@ -15,8 +15,8 @@
             
         }
 
-        .form{
-            margin-left: 15px;
+        .main{
+            margin-left: 40px;
             margin-top: 20px;
         }
 
@@ -42,6 +42,7 @@
             display: inline-block;
             margin-top: 10px;
             border-radius: 20px; 
+            margin-left: 0px;
         }
 
         .profile{
@@ -67,14 +68,16 @@
 </head>
 <body>
 
-    <div id="main">
+    <div class="main">
         <form id="form">
+            <label for="Profile">Profile:</label><br>
+            <input type="text" id="Profile" name="Profile"><br>            
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email ID:</label><br>
-            <input type="text" id="Email" name="Email"><br>
+            <label for="Occupation">Occupation:</label><br>
+            <input type="text" id="Occupation" name="Occupation"><br>
+            <label for="Info">Info</label><br>
+            <input type="text" id="Info" name="Info"><br>
             <input type="submit" value="submit">
         </form>
     </div>
