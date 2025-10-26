@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="dtat:,">
+
+    <style>
+        body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        transition: background-color 0.3s ease;
+        }
+        body.light {
+        background-color: white;
+        color: black;
+        }
+        body.dark {
+        background-color: black;
+        color: white;
+        }
+        button {
+        width: 100px;
+        height: 40px;
+        background-color: rgb(92, 89, 89);
+        border-radius: 40px;
+        font-family: cursive;
+        color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="themetoggle">
+        <button>toggle</button>
+    </div>
+    <script src="storage.js"></script>
+</body>
+</html>
