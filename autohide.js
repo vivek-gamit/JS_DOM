@@ -9,4 +9,4 @@ let countdown = setInterval(function(){
         clearInterval(countdown);
         hide.style.display = "none"
     }
-},1000)
+},1000);
